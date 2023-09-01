@@ -1,0 +1,215 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+:root {
+--clr-btn-gradient: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+--clr-bg-gradient: linear-gradient(150deg, #FFF 0%, #FFF4F4 84.51%);
+--clr-btn-boxshadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.25);
+--clr-brown: #423A3A;
+--clr-lightbrown: #CE9898;
+--clr-accent: #EE8B8B;
+--clr-white: #ffffff;
+--clr-error: #F96464;
+
+--ff-josefin: 'Josefin Sans', sans-serif;
+
+--fw-light: 300;
+--fw-regular:400;
+--fw-semibold:600;
+}
+
+/* html {
+    height: 100%;
+} */
+
+body {
+    background-image: var(--clr-bg-gradient);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+    height: 100%;
+    font-family: var(--ff-josefin);
+    font-size: 0.875rem;
+    color: var(--clr-lightbrown);
+    display: grid;
+}
+
+.container {
+    min-width: 300px;
+    max-width: 450px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header, .main-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem
+}
+
+header img {
+    width: 35%;
+}
+
+.hero-image img {
+    width: 100%;
+    min-width: 300px;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.main-content {
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 105%;
+    letter-spacing: 0.675rem;
+    font-weight: var(--fw-semibold);
+    color: var(--clr-brown);
+}
+
+h1 > span {
+    font-weight: var(--fw-light);
+    color: var(--clr-lightbrown);
+}
+
+p {
+    line-height: 1.375rem;
+}
+
+form {
+    width: 100%;
+    position: relative;
+}
+
+.email-input {
+    position: relative;
+    /* display: inline-block; */
+    height: 100%;
+}
+
+input[type="email"], input[type="email"]:not(:focus) {
+    position: relative;
+    width: 100%;
+    /* min-height: 100%; */
+    padding: 1rem 1.5rem;
+    border-radius: 20rem;
+    border: 1px solid var(--clr-lightbrown);
+    color: var(--clr-lightbrown);
+    background-color: transparent;
+    opacity: 0.5;
+
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border: 2px solid var(--clr-error);
+    color: var(--clr-brown);
+    opacity: 1;
+    background-color: #fcefef;
+}
+
+
+input[type="email"] {
+    outline: none;
+    border: 2px solid var(--clr-error);
+    color: var(--clr-brown);
+    opacity: 1;
+}
+
+input[type="email"]::placeholder {
+    color: var(--clr-lightbrown);
+}
+
+.error-icon {
+    position: absolute;
+    width: 1.5rem;
+    top: 50%;
+    right: 20%;
+    z-index: 2;
+    transform:translate(-50%, -50%)
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    border-radius: 20rem;
+    z-index: 4;
+    background-image: var(--clr-btn-gradient);
+    border: none;
+    text-align: center;
+    box-shadow: var(--clr-btn-boxshadow);
+}
+
+.error-statement {
+    position: absolute;
+    margin-left: 1.5rem;
+    color: var(--clr-error);
+    margin-top: 0.25rem;
+
+}
+
+
+@media screen and (min-width: 90rem) {
+    
+}
