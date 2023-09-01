@@ -210,6 +210,72 @@ button {
 }
 
 
-@media screen and (min-width: 90rem) {
-    
+@media screen and (min-width: 70rem) {
+    body {
+        grid-template-columns: 60% 1fr;
+        /* grid-template-rows: repeat(2, 20% auto); */
+        grid-auto-rows: 20% auto;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .logo-cell {
+        align-self: center;
+    }
+
+    .image-cell {
+        grid-row: span 2;
+    }
+
+    .content-cell {
+    }
+
+    .main-content {
+        text-align: left;
+        padding-top: 3rem;
+        padding-bottom: 0;
+    }
+
+    .container {
+        /* min-width: 300px; */
+        max-width: 75%;
+        padding-left: 10rem;
+        padding-right: 2rem;
+    }
+
+    header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    picture {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    picture img {
+    object-fit: cover; 
+        height: auto;
+        width:100%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 110%;
+        letter-spacing: 1.0825;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 175%;
+    }
+
+    button:hover {
+        box-shadow: inset 0 0 0 100px rgba(255,255,255,.3), var(--clr-btn-boxshadow);
+        cursor: pointer;
+    }
+
 }
