@@ -201,7 +201,7 @@ button {
     box-shadow: var(--clr-btn-boxshadow);
 }
 
-.error-statement {
+#error-statement {
     position: absolute;
     margin-left: 1.5rem;
     color: var(--clr-error);
@@ -209,6 +209,9 @@ button {
 
 }
 
+.no-error { 
+    display: none;
+}
 
 @media screen and (min-width: 70rem) {
     body {
@@ -227,9 +230,6 @@ button {
 
     .image-cell {
         grid-row: span 2;
-    }
-
-    .content-cell {
     }
 
     .main-content {
