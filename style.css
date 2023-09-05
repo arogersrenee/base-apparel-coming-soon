@@ -257,8 +257,8 @@ button {
         display: flex;
     }
 
-    picture img {
-    object-fit: cover; 
+    .picture img {
+        object-fit: cover; 
         height: auto;
         width:100%;
     }
